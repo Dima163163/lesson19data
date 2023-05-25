@@ -1,0 +1,14 @@
+.block {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  background: black;
+}
+
+.animation {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: white;
+  border: 3px solid red;
+}
