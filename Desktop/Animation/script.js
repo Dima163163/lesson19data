@@ -33,10 +33,8 @@ const stopAndActiveAnimation = () => {
 
 const resetAnimation = () => {
   position = 0;
-  if (position === 0) {
-    blockAnimation.style.top = position + "px";
-    blockAnimation.style.left = position + "px";
-  }
+  blockAnimation.style.top = position + "px";
+  blockAnimation.style.left = position + "px";
 };
 
 btnStart.addEventListener("click", stopAndActiveAnimation);
