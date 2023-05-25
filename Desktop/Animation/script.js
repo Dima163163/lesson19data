@@ -23,11 +23,11 @@ const squareAnimation = () => {
 
 const stopAndActiveAnimation = () => {
   if (active) {
-    cancelAnimationFrame(idInterval);
-    active = false;
-  } else {
     idInterval = requestAnimationFrame(squareAnimation);
     active = true;
+  } else {
+    cancelAnimationFrame(idInterval);
+    active = false;
   }
 };
 
