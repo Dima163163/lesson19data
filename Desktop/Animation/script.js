@@ -6,7 +6,7 @@ const btnStop = document.querySelector(".block_btn_stop");
 
 let position = 0;
 let idInterval;
-let active = true;
+let active = false;
 
 const squareAnimation = () => {
   position++;
@@ -35,6 +35,7 @@ const resetAnimation = () => {
   position = 0;
   blockAnimation.style.top = position + "px";
   blockAnimation.style.left = position + "px";
+  active = false;
 };
 
 btnStart.addEventListener("click", stopAndActiveAnimation);
